@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <aside>
+            <ul>
+                <li>iTEM 1</li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="wrapper_inner">
+                <p>
+                    SALUT!
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <style type="text/css">
+        body {
+
+             overflow: hidden;
+             height: 100vh;
+        }
+
+        main {
+
+             overflow-y: auto;
+             
+        }
+
+        aside {
+
+            flex: 1 0 10%;
+        }
+        .wrapper { display: flex; height: 100%;}
+
+        @media (max-width: 500px) {
+             .wrapper {
+
+                 flex-direction: column-reverse;
+             }
+
+             ul {
+
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-between;
+             }
+        }
+
+    </style>
+    
+</body>
+</html>
